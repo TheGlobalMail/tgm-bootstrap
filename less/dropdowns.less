@@ -54,7 +54,6 @@
   border: 1px solid @dropdownBorder;
   *border-right-width: 2px;
   *border-bottom-width: 2px;
-  .border-radius(6px);
   .box-shadow(0 5px 10px rgba(0,0,0,.2));
   -webkit-background-clip: padding-box;
      -moz-background-clip: padding;
@@ -91,18 +90,16 @@
   text-decoration: none;
   color: @dropdownLinkColorHover;
   background-color: @dropdownLinkBackgroundHover;
-  #gradient > .vertical(@dropdownLinkBackgroundHover, darken(@dropdownLinkBackgroundHover, 5%));
 }
 
 // Active state
 // ------------
 .dropdown-menu .active > a,
 .dropdown-menu .active > a:hover {
-  color: @dropdownLinkColorHover;
+  color: @white;
   text-decoration: none;
   outline: 0;
   background-color: @dropdownLinkBackgroundActive;
-  #gradient > .vertical(@dropdownLinkBackgroundActive, darken(@dropdownLinkBackgroundActive, 5%));
 }
 
 // Disabled state

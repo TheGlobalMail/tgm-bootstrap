@@ -23,10 +23,9 @@
   min-height: @navbarHeight;
   padding-left:  20px;
   padding-right: 20px;
-  #gradient > .vertical(@navbarBackgroundHighlight, @navbarBackground);
+  background: @navbarBackground;
   border: 1px solid @navbarBorder;
   .border-radius(4px);
-  .box-shadow(0 1px 4px rgba(0,0,0,.065));
 
   // Prevent floats from breaking the navbar
   .clearfix();
@@ -202,7 +201,9 @@
 .navbar-fixed-top,
 .navbar-static-top {
   .navbar-inner {
-    .box-shadow(inset 0 -1px 0 rgba(0,0,0,.1), 0 1px 10px rgba(0,0,0,.1));
+    border-bottom: 4px solid rgb(170,170,170);
+    border-bottom: 4px solid rgba(90,90,90,.7);
+    .background-clip(padding-box);
   }
 }
 
@@ -241,6 +242,7 @@
   padding: ((@navbarHeight - @baseLineHeight) / 2) 15px ((@navbarHeight - @baseLineHeight) / 2);
   color: @navbarLinkColor;
   text-decoration: none;
+  font-weight: bold;
   text-shadow: 0 1px 0 @navbarBackgroundHighlight;
 }
 .navbar .nav .dropdown-toggle .caret {

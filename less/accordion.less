@@ -19,7 +19,13 @@
 }
 .accordion-heading .accordion-toggle {
   display: block;
-  padding: 8px 15px;
+  padding: 9px 15px 7px;
+  color: @componentLinkColor;
+  .ui-title;
+
+  &:hover {
+    background-color: @grayLighter;
+  }
 }
 
 // General toggle styles

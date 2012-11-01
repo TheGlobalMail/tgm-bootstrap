@@ -215,16 +215,19 @@ table [class*=span],
 
 .table tbody tr {
   &.success td {
-    background-color: @successBackground;
+    background-color: lighten(@successBackground, 40%);
   }
   &.error td {
     background-color: @errorBackground;
+    color: @errorText;
   }
   &.warning td {
     background-color: @warningBackground;
+    color: @warningText;
   }
   &.info td {
     background-color: @infoBackground;
+    color: @infoText;
   }
 }
 

@@ -9,7 +9,6 @@
 .alert {
   padding: 8px 35px 8px 14px;
   margin-bottom: @baseLineHeight;
-  text-shadow: 0 1px 0 rgba(255,255,255,.5);
   background-color: @warningBackground;
   border: 1px solid @warningBorder;
   .border-radius(4px);
@@ -17,6 +16,16 @@
 }
 .alert h4 {
   margin: 0;
+}
+
+.alert a:not(.btn) {
+  display: inline-block;
+  border-bottom: 1px dotted #eee;
+  color: @warningText;
+
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 // Adjust close link position
@@ -32,7 +41,7 @@
 // -------------------------
 
 .alert-success {
-  background-color: @successBackground;
+  background-color: darken(spin(@successBackground, 3), 3%);
   border-color: @successBorder;
   color: @successText;
 }

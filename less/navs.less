@@ -18,7 +18,7 @@
 }
 .nav > li > a:hover {
   text-decoration: none;
-  background-color: @grayLighter;
+  background-color: @grayLightish;
 }
 
 // Redeclare pull classes because of specifity
@@ -60,12 +60,17 @@
 }
 .nav-list > li > a {
   padding: 3px 15px;
+  color: @componentLinkColor;
+  font-weight: bold;
 }
 .nav-list > .active > a,
 .nav-list > .active > a:hover {
   color: @white;
   text-shadow: 0 -1px 0 rgba(0,0,0,.2);
-  background-color: @linkColor;
+  background-color: @textColor;
+}
+.nav-list > .active > a:hover {
+  background-color: @black;
 }
 .nav-list [class^="icon-"] {
   margin-right: 2px;
@@ -115,6 +120,8 @@
   line-height: @baseLineHeight;
   border: 1px solid transparent;
   .border-radius(4px 4px 0 0);
+  font-weight: bold;
+  color: @componentLinkColor;
   &:hover {
     border-color: @grayLighter @grayLighter #ddd;
   }
@@ -122,7 +129,7 @@
 // Active state, and it's :hover to override normal :hover
 .nav-tabs > .active > a,
 .nav-tabs > .active > a:hover {
-  color: @gray;
+  color: @textColor;
   background-color: @white;
   border: 1px solid #ddd;
   border-bottom-color: transparent;
@@ -140,19 +147,27 @@
   margin-top: 2px;
   margin-bottom: 2px;
   .border-radius(5px);
+  color: @componentLinkColor;
+  font-weight: bold;
 }
 
 // Active state
 .nav-pills > .active > a,
 .nav-pills > .active > a:hover {
   color: @white;
-  background-color: @linkColor;
+  background-color: @grayDarker;
 }
 
 
 
 // STACKED NAV
 // -----------
+
+.nav-stacked {
+  background-color: @white;
+  border: 1px solid @grayLighter;
+  padding: 5px 10px 15px;
+}
 
 // Stacked tabs and pills
 .nav-stacked > li {
@@ -168,13 +183,9 @@
 }
 .nav-tabs.nav-stacked > li > a {
   border: 1px solid #ddd;
-  .border-radius(0);
-}
-.nav-tabs.nav-stacked > li:first-child > a {
-  .border-top-radius(4px);
-}
-.nav-tabs.nav-stacked > li:last-child > a {
-  .border-bottom-radius(4px);
+  .border-radius(5px);
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .nav-tabs.nav-stacked > li > a:hover {
   border-color: #ddd;
@@ -205,13 +216,9 @@
 // -------------------------
 // Make carets use linkColor to start
 .nav .dropdown-toggle .caret {
-  border-top-color: @linkColor;
-  border-bottom-color: @linkColor;
+  border-top-color: @componentLinkColor;
+  border-bottom-color: @componentLinkColor;
   margin-top: 6px;
-}
-.nav .dropdown-toggle:hover .caret {
-  border-top-color: @linkColorHover;
-  border-bottom-color: @linkColorHover;
 }
 /* move down carets for tabs */
 .nav-tabs .dropdown-toggle .caret {
@@ -225,8 +232,8 @@
   border-bottom-color: #fff;
 }
 .nav-tabs .active .dropdown-toggle .caret {
-  border-top-color: @gray;
-  border-bottom-color: @gray;
+  border-top-color: @componentLinkColor;
+  border-bottom-color: @componentLinkColor;
 }
 
 // Active:hover dropdown links
