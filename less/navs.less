@@ -13,13 +13,21 @@
 // NAV LIST
 // --------
 
+.nav-list  > li:first-child > a {
+  .border-top-radius(5px);
+}
+
+.nav-list  > li:last-child > a {
+  .border-bottom-radius(5px);
+}
+
 .nav-list > li > a {
   color: @componentLinkColor;
   font-weight: bold;
 }
 .nav-list > .active > a,
 .nav-list > .active > a:hover {
-  background-color: @gray;
+  background-color: @grayTGM;
 }
 .nav-list > .active > a:hover {
   background-color: @black;
@@ -57,7 +65,7 @@
 .nav-pills > .active > a,
 .nav-pills > .active > a:hover {
   color: @white;
-  background-color: @gray;
+  background-color: @grayTGM;
 }
 
 
