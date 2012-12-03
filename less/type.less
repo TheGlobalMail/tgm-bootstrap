@@ -11,7 +11,7 @@ p {
 }
 .lead {
   margin-bottom: @baseLineHeight;
-  font-size: @baseFontSize * 1.5;
+  .font-size(18);
   font-weight: 200;
   line-height: @baseLineHeight * 1.5;
 }
@@ -21,7 +21,7 @@ p {
 // -------------------------
 
 small {
-  font-size: 85%; // Ex: 14px base font * 85% = about 12px
+  .font-size(12); // Ex: 14px base font * 85% = about 12px
 }
 strong {
   font-weight: bold;
@@ -82,17 +82,17 @@ h2, h3, h4, h5, h6 {
 }
 
 
-h1 { font-size: 36px; line-height: 40px; }
-h2 { font-size: 30px; line-height: 40px; }
-h3 { font-size: 24px; line-height: 40px; }
-h4 { font-size: 18px; line-height: 20px; }
-h5 { font-size: 14px; line-height: 20px; }
-h6 { font-size: 12px; line-height: 20px; }
+h1 { .font-size(36); line-height: 40px; }
+h2 { .font-size(30); line-height: 40px; }
+h3 { .font-size(24); line-height: 40px; }
+h4 { .font-size(18); line-height: 20px; }
+h5 { .font-size(14); line-height: 20px; }
+h6 { .font-size(12); line-height: 20px; }
 
-h1 small { font-size: 22px; }
-h2 small { font-size: 16px; }
-h3 small { font-size: 14px; }
-h4 small { font-size: 14px; }
+h1 small { .font-size(22); }
+h2 small { .font-size(16); }
+h3 small { .font-size(14); }
+h4 small { .font-size(14); }
 
 
 // Page header
@@ -175,7 +175,7 @@ abbr[title] {
   border-bottom: 1px dotted @grayLight;
 }
 abbr.initialism {
-  font-size: 90%;
+  .font-size(12);
   text-transform: uppercase;
 }
 

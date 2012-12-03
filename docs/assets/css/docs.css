@@ -18,6 +18,8 @@ body {
 /* Code in headings */
 h3 code {
   font-size: 14px;
+  font-size: 1.4rem;
+  font-size: 1.4rem;
   font-weight: normal;
 }
 
@@ -28,6 +30,8 @@ h3 code {
 
 body > .navbar {
   font-size: 14px;
+  font-size: 1.4rem;
+  font-size: 1.4rem;
   text-transform: uppercase;
 }
 
@@ -99,12 +103,16 @@ hr.soften {
 }
 .jumbotron h1 {
   font-size: 80px;
+  font-size: 8.0rem;
+  font-size: 8.0rem;
   font-weight: bold;
   letter-spacing: -1px;
   line-height: 1;
 }
 .jumbotron p {
   font-size: 24px;
+  font-size: 2.4rem;
+  font-size: 2.4rem;
   font-weight: 300;
   line-height: 30px;
   margin-bottom: 30px;
@@ -127,6 +135,8 @@ hr.soften {
 .masthead .btn {
   padding: 14px 24px;
   font-size: 24px;
+  font-size: 2.4rem;
+  font-size: 2.4rem;
   font-weight: 200;
   color: #fff; /* redeclare to override the `.jumbotron a` */
   border: 0;
@@ -179,11 +189,13 @@ hr.soften {
 }
 .masthead h1 {
   font-size: 120px;
+  font-size: 12rem;
   line-height: 1;
   letter-spacing: -2px;
 }
 .masthead p {
   font-size: 40px;
+  font-size: 4.0rem;
   font-weight: 200;
   line-height: 1.25;
 }
@@ -231,6 +243,7 @@ hr.soften {
 }
 .subhead h1 {
   font-size: 60px;
+  font-size: 6.0rem;
 }
 .subhead p {
   margin-bottom: 20px;
@@ -251,6 +264,7 @@ hr.soften {
 .marketing h1 {
   margin: 60px 0 10px;
   font-size: 60px;
+  font-size: 6.0rem;
   font-weight: 200;
   line-height: 1;
   letter-spacing: -1px;
@@ -261,11 +275,13 @@ hr.soften {
 }
 .marketing p {
   font-size: 16px;
+  font-size: 1.6rem;
   line-height: 1.5;
 }
 .marketing .marketing-byline {
   margin-bottom: 40px;
   font-size: 20px;
+  font-size: 2.0rem;
   font-weight: 300;
   line-height: 25px;
   color: #999;
@@ -399,6 +415,7 @@ hr.soften {
   margin-bottom: 9px;
   font-family: Menlo, Monaco, "Courier New", monospace;
   font-size: 12px;
+  font-size: 1.2rem;
   color: #d14;
 }
 .download-builder input[type=text]:focus {
@@ -409,6 +426,7 @@ hr.soften {
 .download .checkbox {
   padding: 6px 10px 6px 25px;
   font-size: 13px;
+  font-size: 1.3rem;
   line-height: 18px;
   color: #555;
   background-color: #f9f9f9;
@@ -423,6 +441,7 @@ hr.soften {
 }
 .download .checkbox small {
   font-size: 12px;
+  font-size: 1.2rem;
   color: #777;
 }
 
@@ -454,6 +473,7 @@ hr.soften {
   padding: 19px 24px;
   margin-bottom: 27px;
   font-size: 30px;
+  font-size: 3.0rem;
   line-height: 1;
   text-align: center;
   -webkit-border-radius: 6px;
@@ -525,6 +545,7 @@ h2 + .row {
 ------------------------- */
 .bootstrap-examples p {
   font-size: 13px;
+  font-size: 1.3rem;
   line-height: 18px;
 }
 .bootstrap-examples .thumbnail {
@@ -555,6 +576,7 @@ h2 + .row {
   left: -1px;
   padding: 3px 7px;
   font-size: 12px;
+  font-size: 1.2rem;
   font-weight: bold;
   background-color: #f5f5f5;
   border: 1px solid #ddd;
@@ -696,6 +718,7 @@ form.bs-docs-example {
   width: 25%;
   height: 43px;
   font-size: 14px;
+  font-size: 1.4rem;
   font-weight: bold;
   line-height: 43px;
   color: #999;
@@ -862,10 +885,12 @@ form.bs-docs-example {
   }
   .masthead h1 {
     font-size: 90px;
+  font-size: 9.0rem;
   }
   .masthead p,
   .masthead .btn {
     font-size: 24px;
+  font-size: 2.4rem;
   }
   .marketing .span4 {
     margin-bottom: 40px;
@@ -918,10 +943,12 @@ form.bs-docs-example {
   /* Downsize the jumbotrons */
   .jumbotron h1 {
     font-size: 60px;
+  font-size: 6.0rem;
   }
   .jumbotron p,
   .jumbotron .btn {
     font-size: 20px;
+  font-size: 2.0rem;
   }
   .jumbotron .btn {
     display: block;
@@ -937,6 +964,7 @@ form.bs-docs-example {
   /* Marketing on home */
   .marketing h1 {
     font-size: 40px;
+  font-size: 4.0rem;
   }
 
   /* center example sites */
