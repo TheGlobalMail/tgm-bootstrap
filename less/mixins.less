@@ -115,6 +115,12 @@
 // FONTS
 // --------------------------------------------------
 
+.font-size(@sizeValue){
+  @remValue: (@sizeValue / 10);
+  font-size: ~"@{sizeValue}px";
+  font-size: ~"@{remValue}rem";
+}
+
 #font {
   #family {
     .serif() {
@@ -128,7 +134,7 @@
     }
   }
   .shorthand(@size: @baseFontSize, @weight: normal, @lineHeight: @baseLineHeight) {
-    font-size: @size;
+    .font-size(@size);
     font-weight: @weight;
     line-height: @lineHeight;
   }
