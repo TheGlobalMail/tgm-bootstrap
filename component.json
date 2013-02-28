@@ -1,6 +1,6 @@
 {
   "name": "tgm-bootstrap",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "dependencies": {
       "bootstrap": "2.2.2"
   }
