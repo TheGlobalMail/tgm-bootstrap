@@ -1,17 +1,20 @@
 TGM Theme for [Twitter Bootstrap](http://twitter.github.com/bootstrap) [![Build Status](https://secure.travis-ci.org/twitter/bootstrap.png)](http://travis-ci.org/twitter/bootstrap)
 =================
 
-Bootstrap is a sleek, intuitive, and powerful front-end framework for faster and easier web development, created and maintained by [Mark Otto](http://twitter.com/mdo) and [Jacob Thornton](http://twitter.com/fat) at Twitter.
+Doing a TGM Bootstrap release
+-----------------------------
 
-To get started, checkout http://getbootstrap.com!
-
+1. Commit your changes
+2. Bump the version in `package.json` and `component.json`
+3. Commit the JSON files
+4. Tag with that version number
+5. Push with tags
 
 
 Quick start
 -----------
 
 Clone the repo, `git clone git://github.com/twitter/bootstrap.git`, or [download the latest release](https://github.com/twitter/bootstrap/zipball/master).
-
 
 
 Versioning
@@ -30,7 +33,6 @@ And constructed with the following guidelines:
 * Bug fixes and misc changes bumps the patch
 
 For more information on SemVer, please visit http://semver.org/.
-
 
 
 Bug tracker
