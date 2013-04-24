@@ -107,6 +107,10 @@
         // Fixing a bug where the FB like
         // button is ~30px offset to the right
         text-align: left;
+        .ie8 &,
+        .lt-ie9 &, {
+          text-align: center;
+        }
       }
     }
   }
